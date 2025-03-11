@@ -39,7 +39,7 @@
                 class="form-control d-inline-block input-login shadow"
                 [ngClass]="{'form-control-error': (userForm.controls.password.errors?.['required'] || userForm.controls.password.errors?.['minlength']) && !userForm.controls.password.pristine}"
               />
-              <!-- <span
+              <span
                   class="error-validator"
                   *ngIf="userForm.controls.password.errors?.['required'] && !userForm.controls.password.pristine; else minLengthError "
                   >Campo requerido</span
@@ -50,7 +50,7 @@
                     class="error-validator"
                     >Mínimo 8 carácteres</span
                     >
-                  </ng-template> -->
+                  </ng-template>
             </div>
           </form>
           <div class="d-flex justify-content-end mt-5">
